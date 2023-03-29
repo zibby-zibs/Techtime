@@ -143,26 +143,31 @@ export const courses = [
   export const faq = [
     {
       id: 1,
-      title: "Can i change my plan later?",
+      title: "Is there a free trial available?",
       answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
     },
     {
       id: 2,
-      title: "Are the courses lifetime?",
+      title: "Can i change my plan later?",
       answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
     },
     {
       id: 3,
-      title: "Do I Get Certificate After Taking Courses?",
+      title: "Are the courses lifetime?",
       answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
     },
     {
       id: 4,
-      title: "How do I reach out to mentors?",
+      title: "Do I Get Certificate After Taking Courses?",
       answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
     },
     {
       id: 5,
+      title: "How do I reach out to mentors?",
+      answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
+    },
+    {
+      id: 6,
       title: "Do we get job ready after taking courses?",
       answer: "High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image"
     },

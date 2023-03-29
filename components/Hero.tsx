@@ -15,7 +15,10 @@ function Hero({}: Props) {
          <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet"></link>
         </Head>
         <Header />
-        <main className='overflow-x-hidden md:pt-11'>
+        <main className='relative overflow-x-hidden md:pt-11'>
+            <img src="/Vector-4.png" alt="" className='absolute top-[calc(45%)] -left-3 w-11 h-5 z-10 '/>
+            <img src="/Vector-5.png" alt="" className='absolute top-[calc(40%)] left-[calc(50%)] w-3 h-3 z-10'/>
+            <img src="/ellipse-5.png" alt="" className='absolute top-16 left-5 w-11 h-11 z-10'/>
             <section className='relative w-full p-3 pb-0 h-full font-satoshi bg-cobalt-800 flex flex-col justify-center md:flex-row md:justify-between items-center md:px-11 text-white'>
                 <aside className='text-center flex flex-col items-center md:w-[40%] space-y-3'>
                     <h1 className='font-clash font-semibold text-3xl md:text-6xl leading-11'>Grow your skills to advance your career path</h1>
@@ -47,6 +50,12 @@ function Hero({}: Props) {
                         sizes="100vw"
                         className='h-full w-full'
                     />
+                    <img src="/bulb.png" alt="" className='absolute top-2 left-5 md:-left-5 w-24 h-24 md:h-40 w-5 h-5 md:w-40'/>
+                    <img src="/wordpress.png" alt="" className='absolute bottom-5 right-2 w-5 h-5 md:h-11 w-5 h-5 md:w-11'/>
+                    <img src="/vscode.png" alt="" className='absolute top-8 right-8 w-5 h-5 md:h-11 w-5 h-5 md:w-11'/>
+                    <img src="/figma.png" alt="" className='absolute bottom-[calc(25%)] w-5 h-5 md:h-11 w-5 h-5 md:w-11'/>
+                    <img src="/vector-1.png" alt="" className='absolute top-[calc(50%)] left-11 h-3 w-3'/>
+                    <img src="/vector-2.png" alt="" className='absolute top-[calc(40%)] right-3 h-3 w-3'/>
                 
                 </aside>
             </section>

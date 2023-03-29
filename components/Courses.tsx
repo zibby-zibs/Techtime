@@ -35,10 +35,10 @@ function Courses({}: Props) {
       };
     
   return (
-    <main className='bg-cobalt-50 w-full flex flex-col justify-between font-satoshi'>
+    <main className='bg-cobalt-50 w-full flex flex-col justify-between font-satoshi pt-11'>
         <section className='w-full flex flex-col items-center p-3 md:p-5 space-y-5'>
-            <h1 className='font-clash text-black font-semibold capitalize md:text-4xl'>browse our popular courses</h1>
-            <p className='text-silver-c-600 text-center md:w-[50%]'>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
+            <h1 className='font-clash text-black font-semibold capitalize text-2xl md:text-4xl'>browse our popular courses</h1>
+            <p className='text-silver-c-600 text-center w-[70%] md:w-[50%]'>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
             <div className="flex space-x-5 capitalize items-center text-silver-c-600 text-sm font-semibold md:text-xl">
               {categories?.map((category, i)=>{
                 return (
@@ -88,6 +88,7 @@ function Courses({}: Props) {
             )
           })}
         </section>
+        <button className='bg-cobalt-700 p-4 text-white rounded-lg w-fit mx-auto mt-5' onClick={()=>filterItems('All Categories')}>View Courses</button>
         
     </main>
   )
