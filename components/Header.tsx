@@ -15,9 +15,7 @@ function Header({}: Props) {
       };
   return (
     <header className='fixed top-0 left-0 flex w-full justify-between items-center py-5 px-2 pb-2 md:px-11 bg-cobalt-800 text-white z-50'>
-        <h1>
-            TechTime
-        </h1>
+        <img src="/techtime.png" alt="" className='w-16 md:w-20' />
 
         <ul className='hidden md:flex md:justify-between md:gap-3 font-satoshi md:items-center text-silver-c-300'>
             <Link href='#home'>

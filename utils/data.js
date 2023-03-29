@@ -102,7 +102,7 @@ export const courses = [
       "course_title": "Yoga for Beginners",
       "watch_time": "10hrs 50mins",
       "lesson_no": "32 lessons",
-      "image_src": "/f6.png",
+      "image_src": "/frame95.png",
       "banner": "/unsplash-6.png",
       "name": "adam smith",
       "price": "25.00"

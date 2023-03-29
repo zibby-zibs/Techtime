@@ -49,17 +49,17 @@ function Courses({}: Props) {
               })}
             </div>
         </section>
-        <section className='flex flex-wrap gap-3 justify-center'>
+        <section className='flex flex-wrap gap-3 justify-center w-[90%] mx-auto'>
           {menuItems.map((menu)=> {
             return (
-              <div key={menu?.id} className='bg-white p-2 py-2 min-w-[45%] max-w-[45%] md:max-w-[5rem] flex flex-col space-y-3'>
+              <div key={menu?.id} className='bg-white p-2 py-2 min-w-[25%]  max-w-[45%] md:max-w-fit flex flex-col space-y-3 rounded-lg'>
                 <Image 
                   src={menu?.banner}
                   alt=""
                   height={0}
                   width={0}
                   sizes="100vw"
-                  className='w-[100%] md:w-[100%] h-auto object-contain'
+                  className='w-[100%] h-auto object-contain'
                 />
                 <article className='flex justify-between'>
                   <p className='bg-cobalt-200 text-cobalt-800 px-2 md:px-4 rounded-lg font-semibold text-sm'>{menu?.category}</p>
@@ -67,8 +67,8 @@ function Courses({}: Props) {
                 </article>
                 <h1 className='capitalize text-sm font-semibold'>{menu?.course_title}</h1>
                 <article className='flex justify-between text-[0.75rem]'>
-                  <p>{menu?.watch_time}</p>
-                  <p>{menu?.lesson_no}</p>
+                  <p className='flex gap-2'><img src="/schedule.png" alt="" className='h-3 w-3'/>{menu?.watch_time}</p>
+                  <p className='flex gap-2'><img src="/menu_book.png" alt="" className='h-3 w-3'/>{menu?.lesson_no}</p>
                 </article>
                 <div className='flex justify-between items-center text-sm'>
                   <div className='flex gap-2'>

@@ -16,9 +16,9 @@ function Hero({}: Props) {
         </Head>
         <Header />
         <main className='relative overflow-x-hidden md:pt-11'>
-            <img src="/Vector-4.png" alt="" className='absolute top-[calc(45%)] -left-3 w-11 h-5 z-10 '/>
-            <img src="/Vector-5.png" alt="" className='absolute top-[calc(40%)] left-[calc(50%)] w-3 h-3 z-10'/>
-            <img src="/ellipse-5.png" alt="" className='absolute top-16 left-5 w-11 h-11 z-10'/>
+            <img src="/Vector-4.png" alt="bl" className='absolute top-[calc(45%)] -left-3 w-11 h-5 z-10 '/>
+            <img src="/Vector-5.png" alt="ah" className='absolute top-[calc(40%)] left-[calc(50%)] w-3 h-3 z-10'/>
+            
             <section className='relative w-full p-3 pb-0 h-full font-satoshi bg-cobalt-800 flex flex-col justify-center md:flex-row md:justify-between items-center md:px-11 text-white'>
                 <aside className='text-center flex flex-col items-center md:w-[40%] space-y-3'>
                     <h1 className='font-clash font-semibold text-3xl md:text-6xl leading-11'>Grow your skills to advance your career path</h1>
