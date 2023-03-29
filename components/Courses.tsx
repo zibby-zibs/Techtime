@@ -52,14 +52,14 @@ function Courses({}: Props) {
         <section className='flex flex-wrap gap-3 justify-center'>
           {menuItems.map((menu)=> {
             return (
-              <div key={menu?.id} className='bg-white p-2 py-2 min-w-[45%] max-w-[45%] md:max-w-full flex flex-col space-y-3'>
+              <div key={menu?.id} className='bg-white p-2 py-2 min-w-[45%] max-w-[45%] md:max-w-[5rem] flex flex-col space-y-3'>
                 <Image 
                   src={menu?.banner}
                   alt=""
                   height={0}
                   width={0}
                   sizes="100vw"
-                  className='w-[100%] md:w-80 h-auto object-contain'
+                  className='w-[100%] md:w-[100%] h-auto object-contain'
                 />
                 <article className='flex justify-between'>
                   <p className='bg-cobalt-200 text-cobalt-800 px-2 md:px-4 rounded-lg font-semibold text-sm'>{menu?.category}</p>

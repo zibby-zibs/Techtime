@@ -15,7 +15,7 @@ function Hero({}: Props) {
          <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet"></link>
         </Head>
         <Header />
-        <main className='overflow-x-hidden'>
+        <main className='overflow-x-hidden md:pt-11'>
             <section className='relative w-full p-3 pb-0 h-full font-satoshi bg-cobalt-800 flex flex-col justify-center md:flex-row md:justify-between items-center md:px-11 text-white'>
                 <aside className='text-center flex flex-col items-center md:w-[40%] space-y-3'>
                     <h1 className='font-clash font-semibold text-3xl md:text-6xl leading-11'>Grow your skills to advance your career path</h1>
