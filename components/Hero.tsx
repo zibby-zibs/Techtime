@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Header from './Header'
 import { frame } from '../utils/data'
 import { socials } from '../utils/data'
+import { motion, spring } from "framer-motion"
 
 type Props = {}
 
@@ -26,7 +28,9 @@ function Hero({}: Props) {
 
                     <div className='relative flex space-x-3'>
                         <p className='border-2 border-white p-3 rounded-md'>Get started now</p>
-                        <p className='p-3 bg-white text-cobalt-800 rounded-md'>Enroll now</p>
+                        <Link href='#enroll'>
+                            <p className='p-3 bg-white text-cobalt-800 rounded-md animate-pulse'>Enroll now</p>
+                        </Link>
 
                     </div>
                     <div className='flex gap-3 items-center'>
@@ -41,8 +45,13 @@ function Hero({}: Props) {
                     </div>
                     
                 </aside>
-                <aside className='relative'>
-                    <Image 
+                <motion.aside 
+                    initial={{x: '100%'}}
+                    whileInView={{x:0}}
+                    transition={{duration: 0.5, type: 'spring', stiffness:60}}
+                    className='relative'
+                >
+                    <Image
                         src={'/hero.png'}
                         alt=""
                         height={0}
@@ -57,12 +66,12 @@ function Hero({}: Props) {
                     <img src="/vector-1.png" alt="" className='absolute top-[calc(50%)] left-11 h-3 w-3'/>
                     <img src="/vector-2.png" alt="" className='absolute top-[calc(40%)] right-3 h-3 w-3'/>
                 
-                </aside>
+                </motion.aside>
             </section>
             <section className='flex w-full justify-center gap-5 md:gap-16 bg-cobalt-100'>
                         {socials.map((social)=>{
                             return (
-                                <img key={social.id} src={social.link} alt="" className='h-16 w-16 md:h-36 md:w-36 object-contain'/>
+                                <img key={social.id} src={social.link} alt="" className='h-16 w-16 md:h-36 md:w-36 object-contain hover:scale-110'/>
                             )
                         })}
             </section>

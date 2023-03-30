@@ -8,7 +8,9 @@ function Footer({}: Props) {
   return (
     <main className='font-satoshi p-2 space-y-5 bg-[#000F24] text-white md:flex justify-between'>
         <aside className='space-y-3'>
-            <img src="/techtime.png" alt="" className='w-24 md:w-32' />
+            <Link href='#home'>
+                <img src="/techtime.png" alt="" className='w-24 md:w-32 cursor-pointer' />
+            </Link>
             <p className='font-light'>Reach out to us on any of our social media networks</p>
             <ul className='flex space-x-4 font-light'>
                 <li><SocialIcon url='https://facebook.com'/></li>

@@ -1,5 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 type Props = {}
 
@@ -13,7 +15,9 @@ function About({}: Props) {
                     <img src="/vector-k.png" alt="" className='absolute -top-[calc(6%)] -left-2 h-5 w-5 md:w-8 md:h-8 md:-left-6 md:-top-[calc(15%)]'/>
                 </div>
                 <p className='capitalize text-silver-c-800'>high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
-                <p className='bg-cobalt-600 p-4 capitalize text-white'>view courses</p>
+                <Link href='#courses'>
+                    <p className='bg-cobalt-600 p-4 capitalize text-white cursor-pointer'>view courses</p>
+                </Link>
                 <article className='flex flex-col space-y-3 capitalize w-full'>
                     <div className='flex  gap-16 pt-8'>
                         <p className='bg-white p-2 gap-2 px-5 rounded-lg flex items-center' ><img src="/video.png" alt="" className='w-auto h-8 object-contain'/> audio classes</p>
@@ -63,7 +67,12 @@ function About({}: Props) {
 
         </section>
         <article className='font-satoshi text-center md:text-left flex flex-col md:flex-row items-center md:justify-between space-y-5'>
-            <section className='space-y-3 p-3'>
+            <motion.section 
+                initial={{opacity: 0, x: '-50%'}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: .4, ease: 'easeInOut'}}
+                className='space-y-3 p-3'
+            >
                 <h1 className='font-clash capitalize text-4xl md:text-5xl font-semibold'>this is why we are best from others</h1>
                 <p className='text-silver-c-600 capitalize md:text-[0.8rem]'>high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
                 <Image 
@@ -74,8 +83,13 @@ function About({}: Props) {
                     sizes="100vw"
                     className='left-2 w-full h-auto object-cover rounded-lg'
                 />
-            </section>
-            <section className='flex flex-col w-full text-left p-3 space-y-3 '>
+            </motion.section>
+            <motion.section 
+                 initial={{opacity: 0, x: '50%'}}
+                 whileInView={{opacity: 1, x: 0}}
+                 transition={{duration: .4, ease: 'easeInOut'}}
+                className='flex flex-col w-full text-left p-3 space-y-3 '
+            >
                 <aside className='flex justify-between space-x-3'>
                     <div className='bg-white p-3 md:p-5 leading-8 md:leading-9  md:w-80 space-y-3 rounded-xl'>
                         <img src="/ex-affordable.png" alt="" />
@@ -101,7 +115,7 @@ function About({}: Props) {
                     </div>
                 </aside>
                 
-            </section>
+            </motion.section>
         </article>
     </main>
   )

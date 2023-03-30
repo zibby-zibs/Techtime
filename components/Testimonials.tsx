@@ -22,17 +22,21 @@ function Testimonials({}: Props) {
         <article className='flex overflow-x-auto text-silver-c-600 space-x-2 md:space-x-11 scrollbar-hide'>
             {testimonials.map((testimonial, i)=>{
                 return (
-                    <div key={i} className='bg-white p-2 flex-shrink-0 w-full max-w-3xl rounded-xl'>
-                        <p>{testimonial?.text}</p>
-                        <div>
+                    <div key={i} className='bg-white p-2 flex-shrink-0 w-full max-w-3xl rounded-xl space-y-3'>
+                        <p className='text-sm'>{testimonial?.text}</p>
+                        <div className='flex gap-2 items-center'>
                             <Image 
                                 src={testimonial?.image_src}
                                 alt=""
                                 height={0}
                                 width={0}
                                 sizes="100vw"
-                                className='w-16 h-auto object-contain'
+                                className='w-8 md:w-16 h-auto object-contain'
                             />
+                            <div>
+                                <p className='text-black capitalize text-sm font-semibold'>{testimonial?.name}</p>
+                                <p className='capitalize text-sm'>{testimonial?.title}</p>
+                            </div>
                         </div>
                     </div>
                 )

@@ -15,7 +15,9 @@ function Header({}: Props) {
       };
   return (
     <header className='fixed top-0 left-0 flex w-full justify-between items-center py-5 px-2 pb-2 md:px-11 bg-cobalt-800 text-white z-50'>
-        <img src="/techtime.png" alt="" className='w-16 md:w-20' />
+        <Link href='#home'>
+            <img src="/techtime.png" alt="" className='w-16 md:w-20 cursor-pointer' />
+        </Link>
 
         <ul className='hidden md:flex md:justify-between md:gap-3 font-satoshi md:items-center text-silver-c-300'>
             <Link href='#home'>
@@ -34,12 +36,12 @@ function Header({}: Props) {
                 <li className='cursor-pointer hover:text-white'>Community</li>
             </Link>
             <Link href='#enroll'>
-                <li className='bg-white text-cobalt-800 px-3 py-2 font-semibold rounded-lg cursor-pointer'>Enroll Now</li>
+                <li className='bg-white text-cobalt-800 px-3 py-2 font-semibold rounded-lg cursor-pointer animate-pulse'>Enroll Now</li>
             </Link>
         </ul>
         <FiMenu className='md:hidden' onClick={()=>setShowModal(!showModal)}/>
         { showModal && 
-            <section className='absolute top-16 h-screen bg-white p-5 right-0 z-50 flex flex-col justify-around pt-0'>
+            <section className='absolute top-11 h-screen bg-white p-5 right-0 z-50 flex flex-col justify-around pt-0'>
                 <ul className=' text-2xl  font-satoshi text-cobalt-900 flex flex-col gap-8' onClick={()=>setShowModal(!showModal)}>
                     <Link href='#home'>
                         <li className={`cursor-pointer ${activeClass === 'home' ? 'border-b-2 border-cobalt-300 font-semibold' : ''}`} onClick={() => handleLinkClick('home')}>
