@@ -1,0 +1,14 @@
+node_modules/
+.npm
+
+yarn.lock
+
+
+*.log
+.DS_Store
+.vscode/
+.next/
+
+
+.git
+.gitignore
