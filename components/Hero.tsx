@@ -68,10 +68,10 @@ function Hero({}: Props) {
                 
                 </motion.aside>
             </section>
-            <section className='flex w-full justify-center gap-5 md:gap-16 bg-cobalt-100'>
+            <section className='flex w-full justify-center gap-5 md:gap-16 bg-cobalt-100 overflow-hidden transition-all duration-500'>
                         {socials.map((social)=>{
                             return (
-                                <img key={social.id} src={social.link} alt="" className='h-16 w-16 md:h-36 md:w-36 object-contain hover:scale-110'/>
+                                <img key={social.id} src={social.link} alt="" className='h-16 w-16 md:h-36 md:w-36 object-contain hover:scale-110 '/>
                             )
                         })}
             </section>
